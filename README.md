@@ -14,6 +14,7 @@
 - View - Mapbox GL JS or Open Layer
 	gdal + mapbox vector tile, tippicanno -> vector tile -> s3
 		- Supported input formats -> shapefile, filegeodatabse, geojson, geopackage and so on
+- Ability to author symbology, inspect feature attributes, client-side attribute and spatial filter 
 - Query and clip and ship
 	gdal -> geopackage
 	adhock query -> read geopackage -> geopandans -> generate result and push the output to s3  
@@ -22,21 +23,19 @@
 - Integrate with Jupyter notebook
 	- returns geopandas dataframe from geojson
 - Integrate with Spark Batch Processing
-- Can integrate with Other Tools -> Kepler GL JS, Sandance 
 
 ### Raster
 - View - Mapbox GL JS or Open Layer
 	gdal + Cloud Optimied GeoTiFF -> s3
-		- Supported input formats -> TiFF
-	On the fly Expression Execution
+		- Supported input formats -> GeoTIFF, COG
+- Ability to toggle and style bands, On the fly expression execution 
 - Query and clip and ship
 	RasterIO -> Read COG -> Export 	
 - Exportable to multiple fileformats 
 	GDAL or RasterIO	
 - Integrate with Jupyter notebook
 	- returns numpy array from COG
-- Integrate with Spark Batch Processing
-- Can integrate with Other Tools -> Kepler GL JS
+- Integrate with Spark Batch Processing, Raster Foundry
 	
 ### Point cloud LIDAR, RADAR - TileDB 
 ### Other Scientific data - Zarr
@@ -45,6 +44,10 @@
 ## Catalog Open Standards 
  - OGC Catalogue Service
  - OGC STAC
+
+## Platfrom integration
+- Kepler GL Js
+- Sandance
 
 ## Client SDK
 - CLI
