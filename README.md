@@ -28,7 +28,7 @@
 - View - Mapbox GL JS or Open Layer
 	gdal + Cloud Optimied GeoTiFF -> s3
 		- Supported input formats -> TiFF
-	On the fly Expression
+	On the fly Expression Execution
 - Query and clip and ship
 	RasterIO -> Read COG -> Export 	
 - Exportable to multiple fileformats 
@@ -40,8 +40,6 @@
 	
 ### Point cloud LIDAR, RADAR - TileDB 
 ### Other Scientific data - Zarr
-
-https://code.earthengine.google.com/
 
 
 ## Catalog Open Standards 
