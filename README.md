@@ -1,14 +1,14 @@
 # Open Data Platform
 
 
-Open data platfrom
+## Design Principles
 - Responsive mobile first website, instead of App like UI
 - Cloud Native and Kubernetics Native web application
 - Low cost ($10-$20 monthly charges) but scalable solution  
 - Ability to version data for reproducible data science 
 
 
-Supported DataTypes
+## Supported DataTypes
 
 Vector
 - viewing - Mapbox GL JS or Open Layer
@@ -43,16 +43,16 @@ Point cloud LIDAR and RADAR - TileDB
 https://code.earthengine.google.com/
 
 
-Catalog Open Standards 
+## Catalog Open Standards 
  - OGC Catalogue Service
  - OGC STAC
 
-Client SDK
+## Client SDK
 - CLI
 - WebPortal
 - Python Library - Handy wrapper to query the platfrom data and make sure of it
 
-Deployment options
+## Deployment options
 - Local workstation -> Docker Compose, Kubernetics
 	- Storage  
 		- MinIO https://min.io/ 
