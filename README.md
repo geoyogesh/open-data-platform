@@ -11,7 +11,7 @@
 ## Supported DataTypes
 
 ### Vector
-- viewing - Mapbox GL JS or Open Layer
+- View - Mapbox GL JS or Open Layer
 	gdal + mapbox vector tile, tippicanno -> vector tile -> s3
 		- Supported input formats -> shapefile, filegeodatabse, geojson, geopackage and so on
 - Query and clip and ship
@@ -25,7 +25,7 @@
 - Can integrate with Other Tools -> Kepler GL JS, Sandance 
 
 ### Raster
-- viewing - Mapbox GL JS or Open Layer
+- View - Mapbox GL JS or Open Layer
 	gdal + Cloud Optimied GeoTiFF -> s3
 		- Supported input formats -> TiFF
 	On the fly Expression
