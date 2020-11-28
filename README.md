@@ -10,7 +10,7 @@
 
 ## Supported DataTypes
 
-Vector
+### Vector
 - viewing - Mapbox GL JS or Open Layer
 	gdal + mapbox vector tile, tippicanno -> vector tile -> s3
 		- Supported input formats -> shapefile, filegeodatabse, geojson, geopackage and so on
@@ -24,7 +24,7 @@ Vector
 - Integrate with Spark Batch Processing
 - Can integrate with Other Tools -> Kepler GL JS, Sandance 
 
-Raster
+### Raster
 - viewing - Mapbox GL JS or Open Layer
 	gdal + Cloud Optimied GeoTiFF -> s3
 		- Supported input formats -> TiFF
@@ -38,7 +38,8 @@ Raster
 - Integrate with Spark Batch Processing
 - Can integrate with Other Tools -> Kepler GL JS
 	
-Point cloud LIDAR and RADAR - TileDB 
+### Point cloud LIDAR, RADAR - TileDB 
+### Other Scientific data - Zarr
 
 https://code.earthengine.google.com/
 
