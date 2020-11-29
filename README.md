@@ -1,11 +1,5 @@
 # Open Data Platform
 
-## Target Users
-NGO, Government and Private Organization who wants to share their data to public.
-
-## Motivation
-Current platforms are either fragile, expensive or advocates vendor lock-in to their proprietary platform. It is apprecated when Organization share their data to public and we feel they deserve better tools for their intention. 
-
 ## Design Principles
 - Open source and free software
 - Responsive mobile first website, instead of App like UI
@@ -13,11 +7,18 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 - Low cost ($10-$20 monthly charges) but scalable solution  
 - Ability to version data for reproducible data science 
 
+## Target Users
+NGO, Government and Private Organization who wants to share their data to public.
+
+## Motivation
+Current platforms are either fragile, expensive or advocates vendor lock-in to their proprietary platform. It is apprecated when Organization share their data to public and we feel they deserve better tools for their intention. 
+
 
 ## Supported DataTypes
 ### Tabular & Time Series Tabular Data
 - View - Datagrid, Chart if it is time series
 	TileDB data stored in object storage
+- Storage Format - TileDB
 - Query and clip and ship
 	tiledb python sdk to query and export to desired format using gdal 
 - Export to multiple fileformats -> csv, xlsx .. etc
@@ -25,10 +26,11 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 	- returns pandas dataframe or xarray from tiledb
 - Integrate with Spark Batch Processing and Presto
 
-### Geospatial Vector - Mapbox Vector Tiles & GeoPackage
+### Geospatial Vector
 - View - Mapbox GL JS or Open Layer
 	gdal + mapbox vector tile, tippicanno -> vector tile -> s3
 		- Supported input formats -> shapefile, filegeodatabse, geojson, geopackage and so on
+- Storage Format - Mapbox Vector Tiles & GeoPackage
 - Ability to author symbology, inspect feature attributes, client-side attribute and spatial filter 
 - Query and clip and ship
 	gdal -> geopackage
@@ -39,10 +41,11 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 	- returns geopandas dataframe from geojson
 - Integrate with Spark Batch Processing and Presto
 
-### GeoSpatial Raster - COG
+### GeoSpatial Raster
 - View - Mapbox GL JS or Open Layer
-	gdal + Cloud Optimied GeoTiFF -> s3
+	gdal + Cloud Optimied GeoTiff -> s3
 		- Supported input formats -> GeoTIFF, COG
+- Storage Format - Cloud Optimied GeoTiff (COG)
 - Ability to toggle and style bands, On the fly expression execution 
 - Query and clip and ship
 	RasterIO -> Read COG -> Export 	
@@ -52,19 +55,18 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 	- returns numpy array from COG
 - Integrate with Spark Batch Processing, Raster Foundry
 	
-### Point cloud LIDAR - Point Cloud Tiles & TileDB
-- View - Datagrid, Chart if it is time series
-	TileDB data stored in object storage
-- Query and clip and ship
-	tiledb python sdk to query and export to desired format using gdal 
-- Export to multiple fileformats -> csv, xlsx .. etc
+### Point cloud LIDAR
+- View - Mapbox GL JS + Deck GL (georeferenced), Deck GL (not georeferenced)
+- Storage Format - Point Cloud 3D Tiles & TileDB 
+- Export to fileformats -> laz .. etc
 - Integrate with Jupyter notebook
 	- returns pandas dataframe or xarray from tiledb
-- Integrate with Spark Batch Processing and Presto
 
-### RADAR - TileDB
-### Other Scientific data - Zarr
 
+### RADAR
+- Storage Format - TileDB 
+### Other Scientific data
+- Storage Format - Zarr 
 
 ## Catalog Open Standards 
  - OGC Catalogue Service
