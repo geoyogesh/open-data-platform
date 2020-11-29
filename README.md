@@ -1,7 +1,13 @@
 # Open Data Platform
 
+## Target Users
+NGO, Government and Private Organization who wants to share their data to public.
+
+## Motivation
+Current platforms are either fragile, expensive or advocates vendor lock-in to their proprietary platform. It is apprecated when Organization share their data to public and we feel they deserve better tools for their intention. 
 
 ## Design Principles
+- Open source and free software
 - Responsive mobile first website, instead of App like UI
 - Cloud Native and Kubernetics Native web application
 - Low cost ($10-$20 monthly charges) but scalable solution  
@@ -9,8 +15,17 @@
 
 
 ## Supported DataTypes
+### Tabular & Time Series Tabular Data
+- View - Datagrid, Chart if it is time series
+	TileDB data stored in object storage
+- Query and clip and ship
+	tiledb python sdk to query and export to desired format using gdal 
+- Export to multiple fileformats -> csv, xlsx .. etc
+- Integrate with Jupyter notebook
+	- returns pandas dataframe or xarray from tiledb
+- Integrate with Spark Batch Processing and Presto
 
-### Vector
+### Geospatial Vector - Mapbox Vector Tiles & GeoPackage
 - View - Mapbox GL JS or Open Layer
 	gdal + mapbox vector tile, tippicanno -> vector tile -> s3
 		- Supported input formats -> shapefile, filegeodatabse, geojson, geopackage and so on
@@ -19,25 +34,35 @@
 	gdal -> geopackage
 	adhock query -> read geopackage -> geopandans -> generate result and push the output to s3  
 	using GDAL to support multiple output formats 	
-- Exportable to multiple fileformats -> csv, geojson, file geodatabse, kmz	
+- Export to multiple fileformats -> csv, geojson, file geodatabse, kmz	
 - Integrate with Jupyter notebook
 	- returns geopandas dataframe from geojson
-- Integrate with Spark Batch Processing
+- Integrate with Spark Batch Processing and Presto
 
-### Raster
+### GeoSpatial Raster - COG
 - View - Mapbox GL JS or Open Layer
 	gdal + Cloud Optimied GeoTiFF -> s3
 		- Supported input formats -> GeoTIFF, COG
 - Ability to toggle and style bands, On the fly expression execution 
 - Query and clip and ship
 	RasterIO -> Read COG -> Export 	
-- Exportable to multiple fileformats 
+- Export to multiple fileformats 
 	GDAL or RasterIO	
 - Integrate with Jupyter notebook
 	- returns numpy array from COG
 - Integrate with Spark Batch Processing, Raster Foundry
 	
-### Point cloud LIDAR, RADAR - TileDB 
+### Point cloud LIDAR - Point Cloud Tiles & TileDB
+- View - Datagrid, Chart if it is time series
+	TileDB data stored in object storage
+- Query and clip and ship
+	tiledb python sdk to query and export to desired format using gdal 
+- Export to multiple fileformats -> csv, xlsx .. etc
+- Integrate with Jupyter notebook
+	- returns pandas dataframe or xarray from tiledb
+- Integrate with Spark Batch Processing and Presto
+
+### RADAR - TileDB
 ### Other Scientific data - Zarr
 
 
