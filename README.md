@@ -71,8 +71,23 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 ### Other Scientific data
 - Storage Format - Zarr 
 
-
 ## Metadata
+### Metadata Properties
+- Tile
+- Summary
+- Description
+- Thumbnail
+- Tags
+- Author
+- Credits
+- Links
+- Last Updated
+### Metadata Standards
+- ISO 19115/19139
+- North American Profile of ISO 19115 2003
+- INSPIRE Metadata Directive
+- FGDC CSDGM Metadata
+- Dublin Core
 
 ## Catalog Open Standards 
  - OGC Catalogue Service
