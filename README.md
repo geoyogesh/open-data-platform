@@ -57,9 +57,8 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 - Integrate with Spark Batch Processing, Raster Foundry
 	
 ### Point cloud LIDAR
-- View
-	- Mapbox GL JS + Deck GL (georeferenced), Deck GL (not georeferenced) or PoTree Viewer
-	Use PDAL to write various input formats to laz. Convert LAZ to EPT and TileDB Format
+- View - Mapbox GL JS + Deck GL (georeferenced), Deck GL (not georeferenced) or PoTree Viewer.
+	- Use PDAL to read various input formats to laz. Convert LAZ to EPT using entwine and TileDB Format
 - Storage Format - Point Cloud 3D Tiles or EPT Tiles & TileDB 
 - Ability to inspect data
 - Export to fileformats -> laz .. etc
