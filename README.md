@@ -6,6 +6,7 @@
 - Cloud Native and Kubernetics Native web application
 - Low cost ($10-$20 monthly charges) but scalable solution  
 - Ability to version data for reproducible data science 
+- SEO - data layers are discoverable via search engine
 
 ## Target Users
 Government, Non profit and Private Organization who wants to share their data to public.
@@ -56,8 +57,11 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 - Integrate with Spark Batch Processing, Raster Foundry
 	
 ### Point cloud LIDAR
-- View - Mapbox GL JS + Deck GL (georeferenced), Deck GL (not georeferenced)
-- Storage Format - Point Cloud 3D Tiles & TileDB 
+- View
+	- Mapbox GL JS + Deck GL (georeferenced), Deck GL (not georeferenced) or PoTree Viewer
+	Use PDAL to write various input formats to laz. Convert LAZ to EPT and TileDB Format
+- Storage Format - Point Cloud 3D Tiles or EPT Tiles & TileDB 
+- Ability to inspect data
 - Export to fileformats -> laz .. etc
 - Integrate with Jupyter notebook
 	- returns pandas dataframe or xarray from tiledb
@@ -68,12 +72,15 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 ### Other Scientific data
 - Storage Format - Zarr 
 
+
+## Metadata
+
 ## Catalog Open Standards 
  - OGC Catalogue Service
  - OGC STAC
 
 ## Platfrom integration
-- Kepler GL Js
+- Kepler GL JS
 - Sandance
 
 ## Client SDK
