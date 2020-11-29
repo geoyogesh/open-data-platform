@@ -8,7 +8,7 @@
 - Ability to version data for reproducible data science 
 
 ## Target Users
-NGO, Government and Private Organization who wants to share their data to public.
+Government, Non profit and Private Organization who wants to share their data to public.
 
 ## Motivation
 Current platforms are either fragile, expensive or advocates vendor lock-in to their proprietary platform. It is apprecated when Organization share their data to public and we feel they deserve better tools for their intention. 
