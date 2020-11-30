@@ -76,7 +76,7 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 - ability to download data
 
 ## Metadata
-### Metadata Properties
+#### Metadata Properties
 - Tile
 - Summary
 - Description
@@ -86,14 +86,14 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 - Credits
 - Links
 - Last Updated
-### Metadata Standards
+#### Metadata Standards
 - ISO 19115/19139
 - North American Profile of ISO 19115 2003
 - INSPIRE Metadata Directive
 - FGDC CSDGM Metadata
 - Dublin Core
 
-## Catalog Open Standards 
+#### Catalog Open Standards 
  - OGC Catalogue Service
  - OGC STAC
 
