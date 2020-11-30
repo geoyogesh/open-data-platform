@@ -68,8 +68,12 @@ Current platforms are either fragile, expensive or advocates vendor lock-in to t
 
 ### RADAR
 - Storage Format - TileDB 
-### Other Scientific data
+### Scientific data
 - Storage Format - Zarr 
+
+### Other file formats 
+- store as it or in any of archive format such as zip.
+- ability to download data
 
 ## Metadata
 ### Metadata Properties
