@@ -4,7 +4,7 @@
 - Open source and free software
 - Responsive mobile first website, instead of App like UI/UX
 - Cloud Native and Kubernetics Native web application
-- Low cost ($10-$20 monthly charges) but scalable solution  
+- Low cost ($10-$20 monthly cloud charge for average usage) but scalable solution  
 - Ability to version data for reproducible data science 
 - SEO - data layers are discoverable via search engine
 
