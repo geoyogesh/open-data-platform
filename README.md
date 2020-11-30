@@ -2,7 +2,7 @@
 
 ## Design Principles
 - Open source and free software
-- Responsive mobile first website, instead of App like UI
+- Responsive mobile first website, instead of App like UI/UX
 - Cloud Native and Kubernetics Native web application
 - Low cost ($10-$20 monthly charges) but scalable solution  
 - Ability to version data for reproducible data science 
