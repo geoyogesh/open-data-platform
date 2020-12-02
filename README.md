@@ -7,6 +7,7 @@
 - Low cost ($10-$20 monthly cloud charge for average usage) but scalable solution  
 - Ability to version data for reproducible data science 
 - SEO - data layers are discoverable via search engine
+- Admin UI to manage data with in the platform
 
 ## Target Users
 Government, Non profit and Private Organization who wants to share their data to public.
