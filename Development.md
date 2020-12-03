@@ -2,7 +2,7 @@ Front-End Technology
 - ReactJs
 - Next.js
 - Server side renderer support for better SEO support
-- PureCSS - https://purecss.io/layouts/marketing/#
+- PureCSS/UIKit
 - Deck GL Js
 
 Backend-Api
