@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+    data-loader:
+        build:
+          context: .
+          dockerfile: loader-Dockerfile
+        volumes:
+          - data_loader-data:/data/analysis
+          - ./data_catalog_generated/:/data/analysis/data_catalog_generated
+          - ./data_catalog/:/data/analysis/data_catalog
+        command: tail -f /dev/null
+    data-catalog-generated:
+        image: nginx:1.19.2
+        volumes:
+          - ./nginx.conf:/etc/nginx/nginx.conf:ro
+          - ./data_catalog_generated/:/usr/share/nginx/html
+        ports:
+          - "9001:80"
+    data-catalog:
+        image: nginx:1.19.2
+        volumes:
+          - ./nginx.conf:/etc/nginx/nginx.conf:ro
+          - ./data_catalog/:/usr/share/nginx/html
+        ports:
+          - "9000:80"
+volumes:
+  data_loader-data:
